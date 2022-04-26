@@ -24,4 +24,9 @@ export class CreateUserDto {
     @MinLength(3)
     @ApiProperty()
     lastname: string;
+
+    @IsNotEmpty()
+    @MinLength(8)
+    @ApiProperty()
+    password: string;
 }
