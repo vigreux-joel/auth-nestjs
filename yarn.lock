@@ -9,12 +9,24 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@angular-devkit/core@13.3.2":
+"@angular-devkit/core@^13.1.3", "@angular-devkit/core@13.3.2":
   "integrity" "sha512-wav5plcnlxQAfZ+0EUt3dvVTJnJ1au2TlKVQ0jSQJdR1LA6N7QUI49N2Ua6ZnDMwruQaQkoynitMW2l1it3qYQ=="
   "resolved" "https://registry.npmjs.org/@angular-devkit/core/-/core-13.3.2.tgz"
   "version" "13.3.2"
   dependencies:
     "ajv" "8.9.0"
+    "ajv-formats" "2.1.1"
+    "fast-json-stable-stringify" "2.1.0"
+    "magic-string" "0.25.7"
+    "rxjs" "6.6.7"
+    "source-map" "0.7.3"
+
+"@angular-devkit/core@13.1.4":
+  "integrity" "sha512-225Gjy4iVxh5Jo9njJnaG75M/Dt95UW+dEPCGWKV5E/++7UUlXlo9sNWq8x2vJm2nhtsPkpnXNOt4pW1mIDwqQ=="
+  "resolved" "https://registry.npmjs.org/@angular-devkit/core/-/core-13.1.4.tgz"
+  "version" "13.1.4"
+  dependencies:
+    "ajv" "8.8.2"
     "ajv-formats" "2.1.1"
     "fast-json-stable-stringify" "2.1.0"
     "magic-string" "0.25.7"
@@ -33,12 +45,23 @@
     "minimist" "1.2.6"
     "symbol-observable" "4.0.0"
 
-"@angular-devkit/schematics@13.3.2":
+"@angular-devkit/schematics@^13.1.3", "@angular-devkit/schematics@13.3.2":
   "integrity" "sha512-XCLb23jmqHN0gJg9ZlICaFgfpfnCufIQp5SOsRKMKRkhjKycvDmKnfBTKDlkzb1IaUl6wQwP5k7Z69b9EX+CQw=="
   "resolved" "https://registry.npmjs.org/@angular-devkit/schematics/-/schematics-13.3.2.tgz"
   "version" "13.3.2"
   dependencies:
     "@angular-devkit/core" "13.3.2"
+    "jsonc-parser" "3.0.0"
+    "magic-string" "0.25.7"
+    "ora" "5.4.1"
+    "rxjs" "6.6.7"
+
+"@angular-devkit/schematics@13.1.4":
+  "integrity" "sha512-yBa7IeC4cLZ7s137NAQD+sMB5c6SI6UJ6xYxl6J/CvV2RLGOZZA93i4GuRALi5s82eLi1fH+HEL/gvf3JQynzQ=="
+  "resolved" "https://registry.npmjs.org/@angular-devkit/schematics/-/schematics-13.1.4.tgz"
+  "version" "13.1.4"
+  dependencies:
+    "@angular-devkit/core" "13.1.4"
     "jsonc-parser" "3.0.0"
     "magic-string" "0.25.7"
     "ora" "5.4.1"
@@ -592,7 +615,7 @@
     "webpack" "5.71.0"
     "webpack-node-externals" "3.0.0"
 
-"@nestjs/common@^8.0.0":
+"@nestjs/common@^7.0.0 || ^8.0.0", "@nestjs/common@^7.0.8 || ^8.0.0", "@nestjs/common@^8.0.0":
   "integrity" "sha512-QHi7QcgH/5Jinz+SCfIZJkFHc6Cch1YsAEGFEhi6wSp6MILb0sJMQ1CX06e9tCOAjSlBwaJj4PH0eFCVau5v9Q=="
   "resolved" "https://registry.npmjs.org/@nestjs/common/-/common-8.4.4.tgz"
   "version" "8.4.4"
@@ -615,7 +638,12 @@
     "tslib" "2.3.1"
     "uuid" "8.3.2"
 
-"@nestjs/platform-express@^8.0.0":
+"@nestjs/mapped-types@*":
+  "integrity" "sha512-NFvofzSinp00j5rzUd4tf+xi9od6383iY0JP7o0Bnu1fuItAUkWBgc4EKuIQ3D+c2QI3i9pG1kDWAeY27EMGtg=="
+  "resolved" "https://registry.npmjs.org/@nestjs/mapped-types/-/mapped-types-1.0.1.tgz"
+  "version" "1.0.1"
+
+"@nestjs/platform-express@^7.0.0 || ^8.0.0", "@nestjs/platform-express@^8.0.0":
   "integrity" "sha512-n/H83uzw154v6NVVSg6mniZIvYWtYp0dtNpU9O1qdEmDO030p0tBkeIRoDtpeOVvL2fW5PsHiUYS7HY4tNfykQ=="
   "resolved" "https://registry.npmjs.org/@nestjs/platform-express/-/platform-express-8.4.4.tgz"
   "version" "8.4.4"
@@ -675,7 +703,7 @@
     "consola" "^2.15.0"
     "node-fetch" "^2.6.1"
 
-"@prisma/client@^3.12.0":
+"@prisma/client@^2.0.0 || ^3.0.0", "@prisma/client@^3.12.0":
   "integrity" "sha512-4NEQjUcWja/NVBvfuDFscWSk1/rXg3+wj+TSkqXCb1tKlx/bsUE00rxsvOvGg7VZ6lw1JFpGkwjwmsOIc4zvQw=="
   "resolved" "https://registry.npmjs.org/@prisma/client/-/client-3.12.0.tgz"
   "version" "3.12.0"
@@ -691,6 +719,15 @@
   "integrity" "sha512-zULjkN8yhzS7B3yeEz4aIym4E2w1ChrV12i14pht3ePFufvsAvBSoZ+tuXMvfSoNTgBS5E4bolRzLbMmbwkkMQ=="
   "resolved" "https://registry.npmjs.org/@prisma/engines/-/engines-3.12.0-37.22b822189f46ef0dc5c5b503368d1bee01213980.tgz"
   "version" "3.12.0-37.22b822189f46ef0dc5c5b503368d1bee01213980"
+
+"@schematics/angular@~13.1.3":
+  "integrity" "sha512-P1YsHn1LLAmdpB9X2TBuUgrvEW/KaoBbHr8ifYO8/uQEXyeiIF+So8h/dnegkYkdsr3OwQ2X/j3UF6/+HS0odg=="
+  "resolved" "https://registry.npmjs.org/@schematics/angular/-/angular-13.1.4.tgz"
+  "version" "13.1.4"
+  dependencies:
+    "@angular-devkit/core" "13.1.4"
+    "@angular-devkit/schematics" "13.1.4"
+    "jsonc-parser" "3.0.0"
 
 "@sinonjs/commons@^1.7.0":
   "integrity" "sha512-xkNcLAn/wZaX14RPlwizcKicDk9G3F8m2nU3L7Ukm5zBgTwiT0wsoFAHx9Jq56fJA1z/7uKGtCRu16sOUCLIHQ=="
@@ -1240,6 +1277,16 @@
   "integrity" "sha512-wGgprdCvMalC0BztXvitD2hC04YffAvtsUn93JbGXYLAtCUO4xd17mCCZQxUOItiBwZvJScWo8NIvQMQ71rdpg=="
   "resolved" "https://registry.npmjs.org/ajv/-/ajv-8.11.0.tgz"
   "version" "8.11.0"
+  dependencies:
+    "fast-deep-equal" "^3.1.1"
+    "json-schema-traverse" "^1.0.0"
+    "require-from-string" "^2.0.2"
+    "uri-js" "^4.2.2"
+
+"ajv@8.8.2":
+  "integrity" "sha512-x9VuX+R/jcFj1DHo/fCp99esgGDWiHENrKxaCENuCxpoMCmAt/COCGVDwA7kleEpEzJjDnvh3yGoOuLu0Dtllw=="
+  "resolved" "https://registry.npmjs.org/ajv/-/ajv-8.8.2.tgz"
+  "version" "8.8.2"
   dependencies:
     "fast-deep-equal" "^3.1.1"
     "json-schema-traverse" "^1.0.0"
@@ -3673,6 +3720,15 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
+"nestjs-prisma@^0.15.1":
+  "integrity" "sha512-3h22u0RsRwZt+p6WkXvR8wRJzpcnSieTBrxkcUV7UT2BfQmz/9QaGaOHqBEzow0+S3WpHja2hHFgQERHlWZ91Q=="
+  "resolved" "https://registry.npmjs.org/nestjs-prisma/-/nestjs-prisma-0.15.1.tgz"
+  "version" "0.15.1"
+  dependencies:
+    "@angular-devkit/core" "^13.1.3"
+    "@angular-devkit/schematics" "^13.1.3"
+    "@schematics/angular" "~13.1.3"
+
 "node-emoji@1.11.0":
   "integrity" "sha512-wo2DpQkQp7Sjm2A0cq+sN7EHKO6Sl0ctXeBdFZrL9T9+UywORbufTcTZxom8YqpLQt/FqNMUkOpkZrJVYSKD3A=="
   "resolved" "https://registry.npmjs.org/node-emoji/-/node-emoji-1.11.0.tgz"
@@ -3960,7 +4016,7 @@
     "ansi-styles" "^5.0.0"
     "react-is" "^17.0.1"
 
-"prisma@*", "prisma@^3.12.0":
+"prisma@*", "prisma@^2.0.0 || ^3.0.0", "prisma@^3.12.0":
   "integrity" "sha512-ltCMZAx1i0i9xuPM692Srj8McC665h6E5RqJom999sjtVSccHSD8Z+HSdBN2183h9PJKvC5dapkn78dd0NWMBg=="
   "resolved" "https://registry.npmjs.org/prisma/-/prisma-3.12.0.tgz"
   "version" "3.12.0"
