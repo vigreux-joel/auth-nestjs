@@ -9,16 +9,22 @@ export class PrismaClientExceptionFilter extends BaseExceptionFilter {
     const ctx = host.switchToHttp();
     const response = ctx.getResponse<Response>();
 
+    const status = HttpStatus.CONFLICT;
+    const message = exception.message.replace(/\n/g, '');
+
     switch (exception.code) {
       case 'P2002':
-        const status = HttpStatus.CONFLICT;
-        const message = exception.message.replace(/\n/g, '');
         response.status(status).json({
           statusCode: status,
           message: message,
         });
         break;
-        // TODO catch other error codes (e.g. 'P2000' or 'P2025')
+      case 'P2025':
+        response.status(status).json({
+          statusCode: status,
+          message: message,
+        });
+        break;
       default:
         // default 500 error code
         super.catch(exception, host);
